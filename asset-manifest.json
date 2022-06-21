@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/wiljes-invitation/static/css/main.d7da34c1.css",
-    "main.js": "/wiljes-invitation/static/js/main.daf88987.js",
-    "static/media/video-2.mp4": "/wiljes-invitation/static/media/video-2.278090168b6cdb2686ba.mp4",
-    "static/media/PP1.png": "/wiljes-invitation/static/media/PP1.c1884b2faef77c6ad4f3.png",
-    "static/media/PP2.png": "/wiljes-invitation/static/media/PP2.a4cb33ea23bce890d4d9.png",
-    "static/media/svg-3.svg": "/wiljes-invitation/static/media/svg-3.34d0d299441b424f11202d40bf2a0e17.svg",
-    "static/media/svg-1.svg": "/wiljes-invitation/static/media/svg-1.0671e2352ec5fab2c340c8c1db3a3e1f.svg",
-    "index.html": "/wiljes-invitation/index.html",
-    "main.d7da34c1.css.map": "/wiljes-invitation/static/css/main.d7da34c1.css.map",
-    "main.daf88987.js.map": "/wiljes-invitation/static/js/main.daf88987.js.map"
+    "main.css": "/wiljes/static/css/main.d7da34c1.css",
+    "main.js": "/wiljes/static/js/main.acd6560f.js",
+    "static/media/video-2.mp4": "/wiljes/static/media/video-2.278090168b6cdb2686ba.mp4",
+    "static/media/PP1.png": "/wiljes/static/media/PP1.c1884b2faef77c6ad4f3.png",
+    "static/media/PP2.png": "/wiljes/static/media/PP2.a4cb33ea23bce890d4d9.png",
+    "static/media/svg-3.svg": "/wiljes/static/media/svg-3.34d0d299441b424f11202d40bf2a0e17.svg",
+    "static/media/svg-1.svg": "/wiljes/static/media/svg-1.0671e2352ec5fab2c340c8c1db3a3e1f.svg",
+    "index.html": "/wiljes/index.html",
+    "main.d7da34c1.css.map": "/wiljes/static/css/main.d7da34c1.css.map",
+    "main.acd6560f.js.map": "/wiljes/static/js/main.acd6560f.js.map"
   },
   "entrypoints": [
     "static/css/main.d7da34c1.css",
-    "static/js/main.daf88987.js"
+    "static/js/main.acd6560f.js"
   ]
 }
