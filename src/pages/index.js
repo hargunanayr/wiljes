@@ -1,9 +1,10 @@
+import '../App.css'
 import React, {useState} from 'react'
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeOjbOne, homeOjbThree, homeOjbTwo } from '../components/InfoSection/Data';
+import { homeOjbOne } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 import Countdown from '../components/Countdown';
@@ -15,15 +16,25 @@ const Home = () => {
         setIsOpen(!isOpen)
     }
 
+    const [overflow, setOverflow] = useState(document.body.classList.add('removeScroll'))
+
+    const changeStyle = () => {
+      setOverflow(document.body.classList.add('addScroll'))
+    }
+
+    const [hidebutton, setHidebutton] = useState(false)
+
+    const buttonClick = () => {
+        setHidebutton(!hidebutton)
+    }
+
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
-            <HeroSection />
+            {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+            {/* <Navbar toggle={toggle} /> */}
+            <HeroSection overflow={overflow} changeStyle={changeStyle} hidebutton={hidebutton} buttonClick={buttonClick}/>
             <InfoSection {...homeOjbOne} />
-            <InfoSection {...homeOjbTwo} />
             <Services />
-            <InfoSection {...homeOjbThree} />
             <Countdown />
             <Footer />
         </>

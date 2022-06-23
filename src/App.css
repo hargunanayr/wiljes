@@ -4,3 +4,15 @@
   padding: 0;
   font-family: 'Encode Sans Expanded', sans-serif;
 }
+
+.removeScroll {
+  overflow: hidden;
+}
+
+.addScroll {
+  overflow: auto;
+}
+
+.hidebutton {
+  opacity: 0;
+}

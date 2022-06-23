@@ -14,10 +14,10 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    transition: 0.5s all ease-in-out;
+    transition: all 0.5s all ease-in-out;
 
     @media screen and (max-width: 960px) {
-        transition: 0.8s all ease;
+        transition: all 0.8s all ease;
     }
 `;
 

@@ -10,6 +10,7 @@
     "react": "^18.2.0",
     "react-countdown": "^2.3.2",
     "react-countdown-circle-timer": "^3.0.9",
+    "react-cover-page": "^3.0.11",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",

@@ -84,7 +84,8 @@ export const HeroP = styled.p`
 
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
-    display: flex;
+    /* display: flex; */
+    display: ${({hidebutton}) => (hidebutton ? "none" : "flex")};
     flex-direction: column;
     align-items: center;
 `;

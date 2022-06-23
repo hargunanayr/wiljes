@@ -7,6 +7,10 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
+
+    @media screen and (max-width: 480px) {
+        height: 1300px;
+    }
 `;
 
 export const InfoWrapper = styled.div`
@@ -52,6 +56,8 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    text-align: center;
+    justify-content: center;
 `;
 
 export const TopLine = styled.p`
@@ -86,7 +92,7 @@ export const Subtitle = styled.p`
 
 export const BtnWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 `;
 
 export const ImgWrap = styled.div`

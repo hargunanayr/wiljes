@@ -5,9 +5,9 @@ import { FaInstagram } from 'react-icons/fa'
 
 export const homeOjbOne = {
     id: 'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: '',
     headline: 'Ryan Anugrah',
     description: 'Putra Kedua dari Bapak Yudi Susilo dan Ibu Siti Nurhamsyah',
@@ -15,9 +15,14 @@ export const homeOjbOne = {
     imgStart: false,
     img: require('../../images/PP1.png'),
     alt: 'Img1',
-    dark: true,
-    primary: false,
-    darkText: false
+    dark: false,
+    primary: true,
+    darkText: true,
+    headline2: 'Dianah Razan',
+    description2: 'Putri Pertama dari Bapak Muhammad Siddik dan Ibu Nurjanah S',
+    topLine2: '',
+    img2: require('../../images/PP2.png'),
+    alt2: 'Img2'
 };
 
 export const homeOjbTwo = {
