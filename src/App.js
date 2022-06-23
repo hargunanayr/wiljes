@@ -3,6 +3,10 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages';
 import SigninPage from './pages/signin';
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 function App() {
   return (
     <Router>

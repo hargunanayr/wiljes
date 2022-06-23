@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bgImage from '../../images/gallery/slide2.jpg'
 
 export const ServicesContainer = styled.div`
     height: 800px;
@@ -6,13 +7,11 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #ba8300;
+    /* background: #ba8300; */
+    background-image: url(${bgImage});
+    background-size: cover;
 
     @media screen and (max-width: 768px) {
-        height: 1000px;
-    }
-
-    @media screen and (max-width: 480px) {
         height: 1000px;
     }
 `;
@@ -21,6 +20,7 @@ export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 64px;
+    z-index: 12;
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;
@@ -36,6 +36,7 @@ export const ServicesWrapper = styled.div`
     column-gap: 50px;
     row-gap: 50px;
     padding: 0 50px;
+    z-index: 11;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -48,7 +49,7 @@ export const ServicesWrapper = styled.div`
 `;
 
 export const ServicesCard = styled.div`
-    background: #fff;
+    background: rgba(255,255,255,0.8);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -61,6 +62,7 @@ export const ServicesCard = styled.div`
     box-shadow: 3px 3px 3px rgba(255,228,196,0.3);
     /* box-shadow: 5px 5px; */
     transition: all 0.2s ease-in-out;
+    
 
     &:hover{
         transform: scale(1.02);
@@ -87,4 +89,19 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center ;
+`;
+
+export const ServiceOverlay = styled.div`
+    background: #000;
+    position: absolute;
+    opacity: 0.2;
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+
+    @media screen and (max-width: 768px) {
+        height: 1000px;
+    }
 `;

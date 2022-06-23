@@ -8,6 +8,8 @@ import { homeOjbOne } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 import Countdown from '../components/Countdown';
+import Gallery from '../components/Gallery';
+import { SliderData } from '../components/Gallery/Data'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -35,6 +37,7 @@ const Home = () => {
             <HeroSection overflow={overflow} changeStyle={changeStyle} hidebutton={hidebutton} buttonClick={buttonClick}/>
             <InfoSection {...homeOjbOne} />
             <Services />
+            <Gallery slides={SliderData}/>
             <Countdown />
             <Footer />
         </>
