@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import Countdown from '../components/Countdown';
 import Gallery from '../components/Gallery';
 import { SliderData } from '../components/Gallery/Data'
+import song from '../audios/sound.mp3'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -29,17 +30,25 @@ const Home = () => {
     const buttonClick = () => {
         setHidebutton(!hidebutton)
     }
+    
+    var audio = new Audio(song)
+    const playSong = () => {
+        audio.play()
+    }
 
     return (
         <>
             {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
             {/* <Navbar toggle={toggle} /> */}
-            <HeroSection overflow={overflow} changeStyle={changeStyle} hidebutton={hidebutton} buttonClick={buttonClick}/>
+            <HeroSection overflow={overflow} changeStyle={changeStyle} hidebutton={hidebutton} buttonClick={buttonClick} playSong={playSong}/>
             <InfoSection {...homeOjbOne} />
             <Services />
             <Gallery slides={SliderData}/>
             <Countdown />
             <Footer />
+            {/* <audio loop id='song'>
+                <source src={song} />
+            </audio> */}
         </>
     )
 }

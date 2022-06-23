@@ -5,7 +5,7 @@ import { Button } from '../ButtonElements'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
 import '../../App.css'
 
-const Hero = ( {changeStyle, buttonClick, hidebutton} ) => {
+const Hero = ( {changeStyle, buttonClick, hidebutton, playSong} ) => {
   const [hover, setHover] = useState(false)
 
   const onHover = () => {
@@ -23,7 +23,7 @@ const Hero = ( {changeStyle, buttonClick, hidebutton} ) => {
         <HeroH1>Ryan & Dianah</HeroH1>
         <HeroP>2 Januari 2022</HeroP>
         <HeroBtnWrapper hidebutton={hidebutton}>
-          <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary={1} dark={0} smooth="true" duration={1200} spy={true} exact='true' offset={-80} activeClass="active" onClick={() => {changeStyle(); buttonClick();}}>
+          <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary={1} dark={0} smooth="true" duration={1200} spy={true} exact='true' offset={-80} activeClass="active" onClick={() => {changeStyle(); buttonClick(); playSong();}}>
             Open Invitation! {hover ?  <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
